@@ -5,10 +5,8 @@ import os
 
 app = Flask(__name__)
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Access the API key
 api_key = os.getenv('API_KEY')
 print(f'Your API key is: {api_key}')
 
